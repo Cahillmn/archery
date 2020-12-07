@@ -78,10 +78,6 @@ body {
     font-size: 17px;
 }
 
-main {
-   
-}
-
 .about {
     margin: 20px;
 }
@@ -153,11 +149,15 @@ li {
 .lessons h2, .private h2 {
     margin-top: 20px;
     padding: 15px;
-    
-       
-    }
-   
 }
+
+ video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 30px;
+  }
 
 .policy h3 {
     padding-top: 50px;
