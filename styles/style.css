@@ -38,11 +38,39 @@ h1 {
 h2 {
     font-size: 24px;
     font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    
 }
 
 h3 {
     text-align: center;
     padding-bottom: 20px;
+}
+
+.form h2 {
+    text-align: left;
+}
+
+.form h3 {
+    padding-top: 10px;
+}
+
+.lessons h3, .private h3 {
+    margin-top: 20px;
+    padding: 15px;
+    
+   
+}
+
+.lessons h2, .private h2 {
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.contact h3, .form h3{
+    text-align: left;
 }
 
 
@@ -99,13 +127,6 @@ body {
     color: white;
 }
 
-h2 {
-    padding: 10px;
-    text-align: center;
-    
-}
-
-
 ul {
     margin: 20px;
 }
@@ -130,25 +151,54 @@ li {
     border: 2px solid #444444;
 }
 
-.lessons, .private {
-    display: grid;
-    grid-template-columns:  30% 10% 30% 30%;
-    /* display:block; */
+.instructor-1 {
+    grid-column-start: 2;
+    
 }
 
-.lessons p, .private p {
-    padding-top: 20px;
-}
-
-.lessons h3, .private h3 {
-    margin-top: 20px;
-    padding: 15px;
+.instructor-2 {
+    grid-column-start: 4;
    
 }
 
-.lessons h2, .private h2 {
-    margin-top: 20px;
-    padding: 15px;
+.instructor-3 {
+    grid-column-start: 6;
+    
+}
+
+.instructor-1 h3, .instructor-2 h3, .instructor-3 h3 {
+    margin-top:20px;
+}
+
+.experience {
+    padding-left: 20px;
+}
+
+.lessons, .private {
+    display: grid;
+    grid-template-columns:  30% 10% 30% 30%;
+    
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 200px 30px;
+    grid-column-gap: 80px;
+    grid-row-gap: 20px;
+}
+
+.button {
+    width: 25%;
+    margin-left: 300px;
+}
+
+.lessons p, .private p {
+    padding-top: 10px;
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    
 }
 
  video {
@@ -157,6 +207,10 @@ li {
     margin-right: auto;
     width: 50%;
     padding-top: 30px;
+  }
+
+.policy p{
+    padding:10px 20px;
   }
 
 .policy h3 {
@@ -168,7 +222,6 @@ li {
     grid-column-end: 4;
     
 }
-
 
 .label {
     grid-column-start: 2;
@@ -238,16 +291,18 @@ li {
     grid-row-start: 15;
  }
 
-
-
-
-
-
+ .map {
+     grid-row-start: 2; 
+     grid-row-end:8;
+     margin-top: 20px;
+ }
 
 .more {
     margin: 20px;
     padding-top:30px;
     padding-bottom: 30px;
+    padding-left: 350px;
+    width: 65%;
 }
 
 footer {
