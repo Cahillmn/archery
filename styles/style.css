@@ -41,7 +41,7 @@ h2 {
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
-    
+
 }
 
 h3 {
@@ -57,19 +57,22 @@ h3 {
     padding-top: 10px;
 }
 
-.lessons h3, .private h3 {
+.lessons h3,
+.private h3 {
     margin-top: 20px;
     padding: 15px;
-    
-   
+
+
 }
 
-.lessons h2, .private h2 {
+.lessons h2,
+.private h2 {
     margin-top: 20px;
     padding: 15px;
 }
 
-.contact h3, .form h3{
+.contact h3,
+.form h3 {
     text-align: left;
 }
 
@@ -113,9 +116,9 @@ body {
 .home {
     display: grid;
     grid-template-columns: 7.5% 25% 5% 25% 5% 25% 7.5%;
-    margin: 30px;
-    
-    
+    margin-top: 50px;
+
+
 }
 
 .home img {
@@ -123,7 +126,9 @@ body {
 
 }
 
-.home h2, .lessons h3, .private h3{
+.home h2,
+.lessons h3,
+.private h3 {
     background-color: #1b447f;
     color: white;
 }
@@ -155,6 +160,7 @@ li {
 
 .instructor {
     margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 .instructor h3 {
@@ -166,31 +172,34 @@ li {
 
 .instructor-1 {
     grid-column-start: 2;
-    
+
 }
 
 .instructor-2 {
     grid-column-start: 4;
-   
+
 }
 
 .instructor-3 {
     grid-column-start: 6;
-    
+
 }
 
-.instructor-1 h3, .instructor-2 h3, .instructor-3 h3 {
-    margin-top:20px;
+.instructor-1 h3,
+.instructor-2 h3,
+.instructor-3 h3 {
+    margin-top: 20px;
 }
 
 .experience {
     padding-left: 20px;
 }
 
-.lessons, .private {
+.lessons,
+.private {
     display: grid;
-    grid-template-columns:  30% 10% 30% 30%;
-    
+    grid-template-columns: 30% 10% 30% 30%;
+
 }
 
 .form {
@@ -203,28 +212,36 @@ li {
 
 .button {
     width: 25%;
-    margin-left: 200px;
+    
 }
 
-.lessons p, .private p {
+.center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lessons p,
+.private p {
     padding-top: 10px;
     border: 1px solid black;
     padding-left: 10px;
     padding-bottom: 10px;
-    
+
 }
 
- video {
+video {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     padding-top: 30px;
-  }
+    padding-bottom: 50px;
+}
 
-.policy p{
-    padding:10px 20px;
-  }
+.policy p {
+    padding: 10px 20px;
+}
 
 .policy h3 {
     padding-top: 50px;
@@ -233,7 +250,7 @@ li {
 .title {
     grid-column-start: 2;
     grid-column-end: 4;
-    
+
 }
 
 .label {
@@ -245,76 +262,76 @@ li {
 }
 
 .row-1 {
-   grid-row-start: 1;
+    grid-row-start: 1;
 }
 
 .row-2 {
     grid-row-start: 2;
- }
+}
 
- .row-3 {
+.row-3 {
     grid-row-start: 3;
- }
+}
 
- .row-4 {
+.row-4 {
     grid-row-start: 4;
- }
+}
 
- .row-5 {
+.row-5 {
     grid-row-start: 5;
- }
+}
 
- .row-6 {
+.row-6 {
     grid-row-start: 6;
- }
+}
 
- .row-7 {
+.row-7 {
     grid-row-start: 7;
- }
+}
 
- .row-8 {
+.row-8 {
     grid-row-start: 8;
- }
+}
 
- .row-9 {
+.row-9 {
     grid-row-start: 9;
- }
+}
 
- .row-10 {
+.row-10 {
     grid-row-start: 10;
- }
+}
 
- .row-11 {
+.row-11 {
     grid-row-start: 11;
- }
+}
 
- .row-12 {
+.row-12 {
     grid-row-start: 12;
- }
+}
 
- .row-13 {
+.row-13 {
     grid-row-start: 13;
- }
+}
 
- .row-14 {
+.row-14 {
     grid-row-start: 14;
- }
+}
 
- .row-15 {
+.row-15 {
     grid-row-start: 15;
- }
+}
 
- .map {
-     grid-row-start: 2; 
-     grid-row-end:8;
-     margin-top: 20px;
- }
+.map {
+    grid-row-start: 2;
+    grid-row-end: 8;
+    margin-top: 20px;
+}
 
 .more {
-    margin: 20px;
-    padding-top:30px;
-    padding-bottom: 30px;
-    padding-left: 250px;
+    /* padding-top: 30px; */
+    /* padding-bottom: 30px; */
+    margin-left: auto;
+    margin-right: auto;
     width: 65%;
 }
 
@@ -326,7 +343,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 50px;
 
 }
 
