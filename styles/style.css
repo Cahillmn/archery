@@ -202,7 +202,7 @@ li {
 
 }
 
-.form {
+form {
     display: grid;
     grid-template-columns: 10% 40% 40% 10%;
     grid-template-rows: 50px 50px 50px 50px 50px 50px 200px 30px;
@@ -210,16 +210,7 @@ li {
     grid-row-gap: 20px;
 }
 
-.button {
-    width: 25%;
-    
-}
 
-.center-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .lessons p,
 .private p {
@@ -256,6 +247,47 @@ video {
 .label {
     grid-column-start: 2;
 }
+
+/* form styling */
+
+input {
+    display: block;
+}
+
+textarea {
+    width: 60%;
+    display: block;
+
+}
+
+label {
+    display: block;
+    padding-right: 20px;
+}
+
+input[type="submit"] {
+    width: 25%;
+    margin-top: 50px;
+    border: 1px solid black;
+}
+
+input[type="submit"]:active {
+    border: 2px solid blue;
+}
+
+input:focus {
+    border: 3px solid salmon;
+}
+
+textarea:focus {
+    border: 3px solid salmon;
+}
+
+select:focus {
+    border: 3px solid salmon;
+}
+
+/* end form styling */
 
 .content {
     grid-column-start: 3;
@@ -328,8 +360,7 @@ video {
 }
 
 .more {
-    /* padding-top: 30px; */
-    /* padding-bottom: 30px; */
+    padding-top: 30px;
     margin-left: auto;
     margin-right: auto;
     width: 65%;
