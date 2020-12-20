@@ -57,6 +57,19 @@ h3 {
     padding-top: 10px;
 }
 
+.label {
+    text-align: left;
+    font-weight: bold;
+}
+
+.content {
+    text-align: left;
+}
+
+.label-text {
+    margin-top: 10px;
+}
+
 .lessons h3,
 .private h3 {
     margin-top: 20px;
@@ -75,6 +88,8 @@ h3 {
 .form h3 {
     text-align: left;
 }
+
+
 
 
 nav ul {
@@ -263,6 +278,30 @@ textarea {
 label {
     display: block;
     padding-right: 20px;
+}
+
+.type {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+
+}
+
+.type label {
+    font-weight: normal;
+    
+}
+
+.label-type {
+    padding-bottom: 10px;
+}
+
+.age {
+    padding-top: 15px;
+}
+
+input[type="radio"] {
+    display: inline;
 }
 
 input[type="submit"] {

@@ -37,16 +37,17 @@
 
         <h1>Contact</h1>
 
-        <form method="get" name="contact-form">
 
+
+        <form method="get" name="contact-form">
 
             <h2 class="label row-1">Contact Us</h2>
 
-            <label class="label row-3">Name
-                <input type="text" name="name" autofocus>
+            <label class="label row-3"> Name
+                <input class="label-text" type="text" name="name" autofocus>
             </label>
 
-            <label class="label row-4">Age
+            <label class=" age label row-4">Age
                 <select name="age">
                     <option value="7-12">7-12</option>
                     <option value="12-18">12-18</option>
@@ -56,15 +57,38 @@
                 </select>
             </label>
 
-            <label class="label row-5">Email
-                <input type="text" name="email" placeholder="example@example.com">
+            <label class="label label-type row-5">What type of archery are you interested in?
+
+                <div class="type">
+
+                    <label>Recreational Archery
+                        <input type="radio" name="type-of-archery" value="Recreational Archery">
+                    </label>
+
+                    <label>Competitive Archery
+                        <input type="radio" name="type-of-archery" value="Competitive archery">
+                    </label>
+
+                    <label>Bow Hunting
+                        <input type="radio" name="type-of-archery" value="Bow hunting">
+                    </label>
+                </div>
+
             </label>
 
-            <label class="label row-6"> Message
-                <textarea name="message" rows="3" cols="15"></textarea>
+            
+
+
+            <label class="label row-6">Email
+                <input class="label-text" type="text" name="email" placeholder="example@example.com">
             </label>
 
-            <div class="center-button label row-7">
+            <label class="label row-7"> Message
+                <textarea class="label-text" name="message" rows="3" cols="15"></textarea>
+            </label>
+
+
+            <div class="center-button label row-8">
                 <input type="submit" value="send" name="submit">
             </div>
 
