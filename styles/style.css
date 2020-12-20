@@ -1,21 +1,434 @@
-*{
-    margin:0;
-    padding:0;
-    
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 header {
-    height: 150px;
+    background-image: url("../images/header.jpg");
+    height: 250px;
+
 }
 
-.header {
+.header-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#logo {
+    margin: 20px;
+    padding-top: 30px;
+}
+
+h1 {
+    font-size: 40px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #444444;
+    text-align: center;
+    background-color: #ebb722;
+
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+
+}
+
+h3 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.form h2 {
+    text-align: left;
+}
+
+.form h3 {
+    padding-top: 10px;
+}
+
+.label {
+    text-align: left;
+    font-weight: bold;
+}
+
+.content {
+    text-align: left;
+}
+
+.label-text {
+    margin-top: 10px;
+}
+
+.lessons h3,
+.private h3 {
+    margin-top: 20px;
+    padding: 15px;
+
+
+}
+
+.lessons h2,
+.private h2 {
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.contact h3,
+.form h3 {
+    text-align: left;
+}
+
+
+
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    padding-top: 30px;
+    height: 50px;
+    line-height: 50px;
+
+
+
+}
+
+nav li {
+    list-style-type: none;
+    font-size: 25px;
+    margin-left: 20px;
+    margin: 20px;
+    padding-top: 30px;
+
+
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    font-size: 17px;
+}
+
+.about {
+    margin: 20px;
+}
+
+.home {
+    display: grid;
+    grid-template-columns: 7.5% 25% 5% 25% 5% 25% 7.5%;
+    margin-top: 50px;
+
+
+}
+
+.home img {
     width: 100%;
+
 }
 
-main {
-    /* background-color: #1b44ff; */
-    height:500px;
-    clear:all;
+.home h2,
+.lessons h3,
+.private h3 {
+    background-color: #1b447f;
+    color: white;
+}
+
+ul {
+    margin: 20px;
+}
+
+li {
+    list-style: inside;
+    padding-left: 20px;
+
+}
+
+.facilities {
+    grid-column-start: 2;
+    border: 2px solid #444444;
+}
+
+.classes {
+    grid-column-start: 4;
+    border: 2px solid #444444;
+}
+
+.instructors {
+    grid-column-start: 6;
+    border: 2px solid #444444;
+}
+
+.instructor {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.instructor h3 {
+    background-color: #1b447f;
+    color: white;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.instructor-1 {
+    grid-column-start: 2;
+
+}
+
+.instructor-2 {
+    grid-column-start: 4;
+
+}
+
+.instructor-3 {
+    grid-column-start: 6;
+
+}
+
+.instructor-1 h3,
+.instructor-2 h3,
+.instructor-3 h3 {
+    margin-top: 20px;
+}
+
+.experience {
+    padding-left: 20px;
+}
+
+.lessons,
+.private {
+    display: grid;
+    grid-template-columns: 30% 10% 30% 30%;
+
+}
+
+form {
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 30px 30px;
+    grid-column-gap: 80px;
+    grid-row-gap: 20px;
 }
 
 
+
+.lessons p,
+.private p {
+    padding-top: 10px;
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+}
+
+video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    width: 50%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.policy p {
+    padding: 10px 20px;
+}
+
+.policy h3 {
+    padding-top: 50px;
+}
+
+.title {
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+}
+
+.label {
+    grid-column-start: 2;
+}
+
+/* form styling */
+
+input {
+    display: block;
+}
+
+textarea {
+    width: 60%;
+    display: block;
+
+}
+
+label {
+    display: block;
+    padding-right: 20px;
+}
+
+.type {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+
+}
+
+.type label {
+    font-weight: normal;
+    
+}
+
+.label-type {
+    padding-bottom: 10px;
+}
+
+.age {
+    padding-top: 15px;
+}
+
+input[type="radio"] {
+    display: inline;
+}
+
+input[type="submit"] {
+    width: 25%;
+    margin-top: 50px;
+    border: 1px solid black;
+}
+
+.center-button {
+    padding-bottom: 50px;
+}
+
+input[type="submit"]:active {
+    border: 2px solid blue;
+}
+
+input:focus {
+    border: 3px solid salmon;
+}
+
+textarea:focus {
+    border: 3px solid salmon;
+}
+
+select:focus {
+    border: 3px solid salmon;
+}
+
+/* end form styling */
+
+.content {
+    grid-column-start: 3;
+}
+
+.row-1 {
+    grid-row-start: 1;
+}
+
+.row-2 {
+    grid-row-start: 2;
+}
+
+.row-3 {
+    grid-row-start: 3;
+}
+
+.row-4 {
+    grid-row-start: 4;
+}
+
+.row-5 {
+    grid-row-start: 5;
+}
+
+.row-6 {
+    grid-row-start: 6;
+}
+
+.row-7 {
+    grid-row-start: 7;
+}
+
+.row-8 {
+    grid-row-start: 8;
+}
+
+.row-9 {
+    grid-row-start: 9;
+}
+
+.row-10 {
+    grid-row-start: 10;
+}
+
+.row-11 {
+    grid-row-start: 11;
+}
+
+.row-12 {
+    grid-row-start: 12;
+}
+
+.row-13 {
+    grid-row-start: 13;
+}
+
+.row-14 {
+    grid-row-start: 14;
+}
+
+.row-15 {
+    grid-row-start: 15;
+}
+
+.map {
+    grid-row-start: 2;
+    grid-row-end: 8;
+    margin-top: 20px;
+}
+
+.more {
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
+footer {
+    clear: both;
+    background-color: #1b447f;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 75px;
+
+}
+
+.address {
+    margin: 30px;
+    padding-top: 30px;
+}
+
+i {
+    padding-right: 30px;
+    font-size: 3rem;
+    color: white;
+}
