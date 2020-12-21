@@ -12,6 +12,7 @@
 <body>
 
     <header>
+        <a href="#main-content" class="hidden">Skip to main content</a>
 
         <div class="header-1">
 
@@ -32,7 +33,7 @@
 
     </header>
 
-    <main>
+    <main id="main-content">
 
 
         <h1>Contact</h1>
@@ -57,24 +58,24 @@
                 </select>
             </label>
 
-            <label class="label label-type row-5">What type of archery are you interested in?
+            <fieldset class="label label-type row-5">What type of archery are you interested in?
 
                 <div class="type">
 
-                    <label>Recreational Archery
-                        <input type="radio" name="type-of-archery" value="Recreational Archery">
+                    <label for="recreational">Recreational Archery
+                        <input id="recreational" type="radio" name="type-of-archery" value="Recreational Archery">
                     </label>
 
-                    <label>Competitive Archery
-                        <input type="radio" name="type-of-archery" value="Competitive archery">
+                    <label for="competitive">Competitive Archery
+                        <input id="competitive" type="radio" name="type-of-archery" value="Competitive archery">
                     </label>
 
-                    <label>Bow Hunting
-                        <input type="radio" name="type-of-archery" value="Bow hunting">
+                    <label for="hunting">Bow Hunting
+                        <input id="hunting" type="radio" name="type-of-archery" value="Bow hunting">
                     </label>
                 </div>
 
-            </label>
+            </fieldset>
 
             
 
